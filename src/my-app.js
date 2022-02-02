@@ -6,33 +6,17 @@
 
 import { LitElement, html, css } from 'lit';
 
-import './components/test-component';
+import './components/main-component';
 
-/**
- * An example element.
- *
- * @fires count-changed - Indicates when the count changes
- * @slot - This element has a slot
- * @csspart button - The button
- */
 export class MyApp extends LitElement {
   /**
    * Gets style.
    *
    * @returns {Array}
    */
-  static get styles() {
-    return [
-      css`
-        main {
-          background-color: grey;
-          height: 100%;
-        }
-      `,
-    ];
-  }
+
   render() {
-    return html`<main><test-component></test-component></main>`;
+    return html`<main><main-component></main-component></main>`;
   }
 }
 
