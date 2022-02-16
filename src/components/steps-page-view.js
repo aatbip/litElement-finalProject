@@ -6,10 +6,10 @@
 
 import { LitElement, html, css } from 'lit';
 
-import './stepList-component';
-import './form-component'; 
+import './steps-navigation-bar'; 
+import './steps-view';
 
-export class ContentComponent extends LitElement {
+export class StepsPageView extends LitElement {
   static get styles() {
     return css`
       * {
@@ -18,7 +18,7 @@ export class ContentComponent extends LitElement {
         box-sizing: border-box;
       }
 
-      .navbar {
+      .steps-page-view {
         width: 95%;
         margin: 2px auto 0px;
         overflow: hidden;
@@ -28,10 +28,21 @@ export class ContentComponent extends LitElement {
       }
 
       .wrapper {
+        display: flex; 
+        justify-content: space-between; 
         width: 98%;
         padding: 5px 5px;
         overflow: hidden;
         margin: 0 auto;
+      }
+
+      steps-navigation-bar {
+        width: 30%;
+        margin-top: 10px; 
+      }
+
+      steps-view {
+        width: 68%; 
       }
     `;
   }
@@ -46,14 +57,14 @@ export class ContentComponent extends LitElement {
 
   render() {
     return html`
-      <div class="navbar">
+      <div class="steps-page-view">
         <div class="wrapper">
-          <step-list-component></step-list-component>
-          <form-component> </form-component>
+          <steps-navigation-bar></steps-navigation-bar>
+          <steps-view></steps-view>
         </div>
       </div>
     `;
   }
 }
 
-customElements.define('content-component', ContentComponent);
+customElements.define('steps-page-view', StepsPageView);

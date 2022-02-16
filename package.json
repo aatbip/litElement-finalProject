@@ -23,9 +23,14 @@
   "author": "Google LLC",
   "license": "BSD-3-Clause",
   "dependencies": {
+    "@cwmr/paper-tags-input": "3.1.0",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
+    "@material/mwc-textfield": "^0.25.3",
     "@mui/material": "^5.3.1",
+    "@polymer/paper-button": "^3.0.1",
+    "@polymer/paper-input": "^3.2.1",
+    "@vaadin-component-factory/vcf-enhanced-rich-text-editor": "^1.4.4",
     "lit": "^2.0.0"
   },
   "devDependencies": {

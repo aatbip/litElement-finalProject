@@ -6,8 +6,8 @@
 
 import { LitElement, html, css } from 'lit';
 
-import './navbar-component';
-import './content-component'; 
+import './steps-page-header';
+import './steps-page-view';
 
 export class MainComponent extends LitElement {
   static get styles() {
@@ -31,15 +31,14 @@ export class MainComponent extends LitElement {
   render() {
     return html`
       <div class="body">
-        <navbar-component></navbar-component>
-        <content-component></content-component> 
+        <steps-page-header></steps-page-header>
+        <steps-page-view></steps-page-view>
       </div>
     `;
   }
 }
 
 customElements.define('main-component', MainComponent);
-
 
 // horizontal line and the outer line of name and requirements - #CBD6EF
 // bg body - #F4F6FC

@@ -6,7 +6,7 @@
 
 import { LitElement, html, css } from 'lit';
 
-export class StepListComponent extends LitElement {
+export class StepsList extends LitElement {
   static get styles() {
     return css`
       * {
@@ -22,13 +22,6 @@ export class StepListComponent extends LitElement {
         top: 5px;
       }
 
-      .container {
-        float: left;
-        width: 30%;
-        border-right: 1px solid #d1d1d1;
-        min-height: 300px;
-      }
-
       .steps {
         background-color: #ece8ff;
         border-left: 2px solid #5900ff;
@@ -39,7 +32,7 @@ export class StepListComponent extends LitElement {
         display: inline-block;
         font-size: 12px;
         color: #5900ff;
-        font-weight: bold; 
+        font-weight: bold;
       }
     `;
   }
@@ -54,14 +47,12 @@ export class StepListComponent extends LitElement {
 
   render() {
     return html`
-      <div class="container">
-        <div class="steps">
-          <img src="../././images/dots-six-thin.png" alt="six dots" />
-          <p>Please tell me something you like</p>
-        </div>
+      <div class="steps">
+        <img src="../././images/dots-six-thin.png" alt="six dots" />
+        <p>Please tell me something you like</p>
       </div>
     `;
   }
 }
 
-customElements.define('step-list-component', StepListComponent);
+customElements.define('steps-list', StepsList);

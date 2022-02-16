@@ -6,7 +6,7 @@
 
 import { LitElement, html, css } from 'lit';
 
-export class NavbarComponent extends LitElement {
+export class StepsPageHeader extends LitElement {
   static get styles() {
     return css`
       * {
@@ -86,4 +86,4 @@ export class NavbarComponent extends LitElement {
   }
 }
 
-customElements.define('navbar-component', NavbarComponent);
+customElements.define('steps-page-header', StepsPageHeader);
